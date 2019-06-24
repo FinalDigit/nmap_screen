@@ -1,5 +1,6 @@
 #!/bin/bash
 # Adjust /etc/$ImageMagic/policy.xml if policy errors occur
+# Script iterates through the file 'ip_list' for hosts
 echo "[*] Starting Nmap, Screenshot Script"
 for ip in $(cat ip_list);
 do
