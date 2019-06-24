@@ -3,7 +3,7 @@
 echo "[*] Starting Nmap, Screenshot Script"
 for ip in $(cat ip_list);
 do
-		ip_filename=$(echo $ip | tr '.' '_')
+	ip_filename=$(echo $ip | tr '.' '_')
         echo "-- $ip --"
         echo "[*] Executing Nmap and Screenshots for $ip"
         nmap -Pn -sV -A -oN "${ip}_nmap_output.nmap" $ip\
